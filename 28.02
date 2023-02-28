@@ -1,0 +1,30 @@
+print('Введите 3-х значеное число')
+a = int(input())
+
+print('Введите прозвольное число')
+new = int(input())
+
+b = a // 100
+c = a // 10 % 10
+d = a % 10
+
+sum = a + b + c
+prouz = a * b * c
+
+if 99 <= a >= 1000:
+    print('Число не верно') 
+
+elif sum >= 10 and sum <= 99:
+    print('сумма 2-х значная')
+    
+elif prouz >= 100 and prouz <= 999:
+    print('произведение 3-х значное')
+    
+elif prouz > new:
+    print('Произведение больше произвольного числа')
+
+elif sum % 5 == 0: 
+    print('Сумма кратно пяти')
+
+elif sum % new == 0:
+    print('Сумма кратна произвольному числу
